@@ -1,0 +1,165 @@
+.tovar {
+
+    &__item {
+        border: 2px solid #e1e1e1;
+        position: relative;
+        margin-bottom: 2em;
+        color: #000;
+    }
+
+    &__like {
+        margin: 1.1em 1em 1em;
+        display: block;
+
+        &:hover {
+            color: #000;
+            text-decoration: none;
+
+            &::before {
+                background-image: url(/img/heart_blue.svg);
+            }
+        }
+
+
+
+
+        &::before {
+
+            content: '';
+            display: block;
+            position: absolute;
+            background-size: contain;
+            background-image: url(/img/heart_outline.svg);
+            background-repeat: no-repeat;
+            width: 30px;
+            height: 30px;
+            left: 32px;
+            top: 19px;
+        }
+    }
+
+    &__article {
+        text-align: right;
+        font-weight: 500;
+        padding: 1.2em 0.7em 1.2em 0.7em;
+    }
+
+    &__sale {
+        width: 70px;
+        height: auto;
+        position: absolute;
+        right: 10px;
+        top: 70px;
+
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 1.05em;
+        margin-bottom: 1.8em;
+        display: block;
+        color: #000;
+
+
+        &:hover {
+            color: $txt-h;
+            text-decoration: none;
+        }
+
+        @media(max-width: 575px) {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        @media(min-width: 575px) and (max-width: 767px) {
+
+            font-size: 14px;
+        }
+
+        @media(min-width: 768px) and (max-width: 991px) {
+
+            font-size: 16px;
+        }
+
+        @media(min-width: 768px) and (max-width: 991px) {
+
+            font-size: 16px;
+        }
+
+    }
+
+    &__info {
+        padding: 1em 0.5em 1.3em;
+        line-height: 1.7;
+    }
+
+    &__price {
+        font-weight: 500;
+        font-size: 1.05em;
+        line-height: 1.5;
+
+
+        @media(max-width: 394px) {
+
+            font-weight: 500;
+            font-size: 12px !important;
+            line-height: 1.5;
+        }
+
+        @media(max-width: 575px) {
+
+            font-size: 16px;
+        }
+
+        @media(min-width: 575px) and (max-width: 767px) {
+
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        @media(min-width: 768px) and (max-width: 991px) {
+
+            font-size: 14px;
+        }
+
+        @media(min-width: 992px) and (max-width: 1199px) {
+
+            font-size: 12px;
+        }
+
+    }
+
+    &__sum {
+        font-weight: 600;
+        font-size: 20px;
+
+
+        @media(max-width: 394px) {
+
+            font-size: 17px !important;
+        }
+
+        @media (min-width: 394px) and (max-width: 575px) {
+
+            font-size: 22px;
+        }
+        @media (min-width: 576px) and (max-width: 991px) {
+
+            font-size: 19px;
+        }
+
+        @media(min-width: 992px) and (max-width: 1199px) {
+
+            font-size: 17px;
+        }
+    }
+
+    &__img {
+
+        @media(max-width: 575px) {
+            margin: 0 auto;
+            display: block;
+        }
+    }
+
+}

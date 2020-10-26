@@ -1,0 +1,96 @@
+.plazma-table {
+    padding-bottom: 15px;
+}
+
+.plazma-table__header {
+    background: #b7b7b7;
+    font-weight: bold;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.plazma-table__price {
+    text-align: center;
+}
+
+.plazma-table__number {
+    text-align: center;
+}
+
+.plazma-table__line {}
+
+.plazma-table__title {
+}
+
+.plazma-table__line > * {
+    border: 1px solid #b7b7b7;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+
+/*.plazma-table__header.opened + .plazma-table__body {*/
+/*  display: flex !important;*/
+/*}*/
+.plazma-table__header {
+    color: #000;
+    background: #ebebeb;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    transition: 0.3s ease;
+}
+
+.plazma-table__header.opened {
+    background: $txt-h;
+    color: #fff;
+
+}
+
+.plazma-table__cursor {
+    align-self: center;
+    margin: auto;
+    transition: .3s;
+}
+
+.plazma-table__cursor-image {
+    transition: .3s;
+}
+
+.plazma-table__header.opened .plazma-table__cursor {
+    transform: rotate(90deg);
+}
+
+.plazma-table__body {
+    display: none;
+}
+
+.plazma-table__body-caption,
+.plazma-table__body-price {
+    outline: 1px solid #b7b7b7;
+}
+
+.plazma-table svg{
+    fill: #000;
+}
+.plazma-table__header.opened svg{
+    fill: #fff !important;
+}
+.plazma-table__body-caption {
+    background: #ebebeb;
+    font-size: .9em;
+}
+
+.plazma-table__body-price {
+    background: #fff;
+}
+
+@media (max-width: 767px) {
+    .plazma-table{
+        font-size: 14px;
+    }
+    .plazma-table__header {
+        padding-top: .5em;
+        padding-bottom: .5em;
+        font-size: .9em;
+    }
+}

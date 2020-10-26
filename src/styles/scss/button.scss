@@ -1,0 +1,221 @@
+.button {
+    font-weight: 600;
+    background: $btn;
+    color: #fff;
+    padding: 0.5em 0.35em;
+    border: none;
+    transition: 0.2s ease;
+
+
+    &:hover,
+    &:focus {
+        color: #fff;
+        text-decoration: none;
+        outline: none;
+        background: $btn-h;
+    }
+
+    &_header {
+        display: block;
+        width: 100%;
+        align-self: flex-end;
+
+        @media (max-width: 475px) {
+            font-size: 0.8em;
+        }
+
+        @media (min-width: 992px) and (max-width: 1200px) {
+            font-size: 0.8em;
+        }
+    }
+
+    &_partners {
+        font-size: 1.7em;
+        font-weight: 700;
+    }
+    &_favourites-form{
+        font-size: 25px;
+        padding: 15px 0 !important;
+    }
+    &_menu-cart {
+        bottom: 2em;
+        display: inline-block;
+        margin: 0 auto;
+        left: 4em;
+        font-size: 1.3em;
+        padding: 0.3em 0.6em;
+        background: #999;
+        color: #fff;
+        position: absolute;
+        left: 15px;
+        bottom: 0;
+
+        &:hover {
+            background: $btn-h;
+            color: #fff;
+
+        }
+
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+
+
+    &_form {
+        width: 100%;
+        font-weight: 700;
+        font-size: 1.7em;
+        padding: 0.41em;
+        align-self: flex-end;
+
+        @media (min-width: 767px) and (max-width: 991px) {
+            font-size: 1.1em;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            font-size: 1.45em;
+        }
+    }
+
+    &_slider {
+        position: absolute;
+        bottom: 2em;
+        left: 4em;
+        font-size: 1.5em;
+        padding: 0.3em 0.8em;
+
+
+        @media (min-width: 992px) and (max-width: 1200px) {
+            font-size: 1.25em;
+        }
+
+        @media (max-width: 767px) {
+            position: absolute;
+            bottom: 2.2em;
+            left: 1em;
+            font-size: 1em;
+            padding: 0.3em 0.8em;
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            font-size: 1em;
+            left: 3.8em;
+            bottom: 1em;
+        }
+    }
+
+    &_product-cart {
+        display: inline-block;
+        font-size: 1.5em;
+        padding: 0.3em 1.3em;
+
+        @media (max-width: 475px) {
+            font-size: 1.1em;
+            padding: 0.3em 1.5em;
+        }
+    }
+
+    &_section-cart {
+        display: inline-block;
+        font-size: 1.5em;
+        padding: 0.2em 0.8em;
+
+        @media (max-width: 475px) {
+            font-size: 1.1em;
+            padding: 0.3em 1.5em;
+        }
+    }
+
+    &_filter {
+        width: 45%;
+        margin-top: 0.5em;
+    }
+
+    &_remove {
+        background: #999;
+        color: #fff;
+        margin-right: 1em;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+
+
+    &_border {
+        background: #fff;
+        margin-right: 2em;
+        transform: 0.3s ease;
+
+        &:hover {
+            color: #fff;
+            background: $btn-h;
+        }
+    }
+
+    &_tovar {
+        display: inline-block;
+        text-align: center;
+        font-size: 21px;
+        font-weight: 600;
+        width: 100%;
+        padding: 5px 8px;
+        border: 3px solid $btn;
+        background: $btn;
+
+
+        &:hover {
+            background: $btn-h;
+            border: 3px solid $btn-h;
+        }
+
+        @media (max-width: 1200px) {
+            font-size: 15px;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 1em;
+            padding: 0.3em;
+            width: auto;
+        }
+
+    }
+
+    &_product {
+        background: $btn;
+        font-size: 23px;
+        font-weight: 600;
+        padding: 0.5em 1em;
+
+        @media(max-width: 468px) {
+            display: block;
+            padding: 0.4em;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        @media(min-width: 768px) and (max-width: 991px) {
+            display: block;
+            text-align: center;
+            padding: 0.5em 0.35em;
+            font-size: 20px;
+        }
+
+        @media(min-width: 991px) and (max-width: 1199px) {
+            font-size: 19px;
+        }
+    }
+
+    &_action {
+        text-align: center;
+        padding: 0.3em;
+        display: block;
+    }
+
+    &_spasibo {
+        font-size: 18px;
+        padding: 0.6em;
+    }
+}

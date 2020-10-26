@@ -1,0 +1,28 @@
+.delivery {
+
+    &__list {
+        line-height: 0.9;
+        
+        @media(max-width: 375px){
+            line-height: 1.5;
+        }
+    }
+
+    &__text {
+        line-height: 2;
+    }
+
+    &__bold {
+        font-weight: 700;
+    }
+
+    &__link {
+        text-decoration: underline;
+        color: #000;
+        
+        &:hover{
+            text-decoration: none;
+            color: $txt-h;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.action{
+    
+    margin-top: 2em; 
+    
+    &__item{
+        display: block;
+        color: #000;
+        margin-bottom: 50px;
+        
+        &:hover{
+            color: #000;
+            text-decoration: none;
+        }
+
+    }
+    
+    &__title{
+        font-size: 14px;
+        font-weight: 700;
+        color: #000; 
+        
+        &:hover{
+            color: $txt-h;
+            text-decoration: none;
+            }
+        }
+        
+    &__info{
+        border: 2px solid #efefef;
+        border-top: none;
+        padding: 1em;
+//        height: 90%; 
+        
+        @media (min-width: 393px) and (max-width: 575px){
+            width: 363px;
+        }
+    }
+    &__description{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.2;
+        margin: 1em 0 2em;
+    }
+    
+    &__data{
+        font-size: 15px;
+        font-weight: 500;
+        display: inline-block;
+        padding-top: 8px;
+    }
+}

@@ -1,0 +1,258 @@
+.header-menu-wrap {
+    width: 100%;
+    display: table;
+    background: #fff;
+    color: #000;
+    border-top: 2px solid #e1e1e1;
+    
+    @media (max-width: 991px){
+        display: none;
+    }
+}
+
+.header-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: 14px;
+    z-index: 4;
+    position: relative;
+    display: table-row;
+
+}
+
+.header-menu li {
+    position: relative;
+    display: table-cell;
+    float: none;
+    margin: 0;
+
+    text-align: left;
+}
+
+.header-menu > li > ul {
+    box-shadow: 0px 0px 14px -6px rgba(0, 0, 0, 0.75);
+}
+
+.header-menu > li > ul > li > a {
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.header-menu > li > ul > li > ul {
+    box-shadow: 0px 0px 14px -6px rgba(0, 0, 0, 0.75);
+}
+
+.header-menu > li > ul > li > ul > li > a {
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.header-menu li:last-child {
+    border: 0 none;
+}
+
+
+.header-menu li a {
+    //1 уровень ховер
+    display: block !important;
+
+}
+
+.header-menu > li > a {
+    //1 уровень ховер
+    display: block;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 7px 20px 7px 0;
+    
+     @media (max-width: 1200px){
+        font-size: 16px;
+    }
+
+}
+
+.header-menu > li > a:hover {
+    //1 уровень ховер
+    background: #fff;
+    color: #465a82 !important;
+}
+
+.header-menu > li > ul > li {
+    //2 уровень
+    float: none;
+    width: 250px;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    text-transform: none;
+    display: block;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    border: 0 none;
+}
+
+
+.header-menu > li > ul > li > a {
+    //2 уровень ссылка
+    color: #000;
+    padding: 10px;
+    display: block;
+
+
+}
+
+.header-menu > li > ul > li > a:hover {
+    //2 уровень ховер
+    background: #465a82;
+    color: #fff !important;
+    text-decoration: none;
+
+}
+
+
+
+.header-menu > li > ul > li > ul {
+    //3 уровень
+    margin-left: 2px;
+    display: block;
+
+
+}
+
+.header-menu > li > ul > li > ul > li > a {
+    //3 уровень
+    display: block;
+    color: #000;
+    font-size: 14px;
+
+
+}
+
+.header-menu > li > ul > li > ul {
+    //3333333333
+    padding-left: 0;
+}
+
+.header-menu > li > ul > li > ul > li {
+    //3333333333
+    float: none;
+    width: 100%;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    text-transform: none;
+    display: block;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    border: 0 none;
+}
+
+.header-menu > li > ul > li > ul > li > a {
+    //3333333333
+
+    padding: 10px;
+}
+
+.header-menu > li > ul > li > ul > li > a:hover {
+    //3 уровень ховер
+    background: #465a82;
+    color: #fff !important;
+    display: block;
+
+}
+
+.header-menu > li > ul {
+    // 2 уровень
+    display: none;
+    position: absolute;
+    background-color: #4d2001;
+    list-style: none;
+    padding: 0;
+    z-index: 5;
+
+}
+
+.header-menu > li:hover > ul {
+    //2 уровень
+    display: block;
+
+}
+
+.header-menu > li > ul > li > ul,
+.header-menu > li:hover > ul > li > ul {
+    //3 уровень
+    display: none;
+    position: absolute;
+    left: 250px;
+    top: 0;
+
+}
+
+.header-menu > li > ul > li:hover > ul {
+    //3 уровень
+    display: block;
+
+}
+
+.header-menu li:hover a {
+    //все ссылки когда навёлся на 1 уровень
+    color: #000;
+    display: block;
+    text-decoration: none;
+
+
+}
+
+.header-menu li:hover > ul li a {
+    //2 уровень
+    color: #000;
+    display: block;
+
+}
+
+.header-menu li > a:after {
+    // стрелочка
+    color: #000;
+    content: ' ▾';
+    font-size: 16px;
+
+}
+
+.header-menu li > a:only-child:after {
+    content: '';
+}
+
+.header-menu li ul li > a:after {
+    color: #000;
+    content: '';
+}
+
+.header-menu li:hover > a:after {
+    content: ' ▾';
+    color: #000;
+    font-size: 16px;
+}
+
+.header-menu li:hover > a:only-child:after {
+    content: '';
+}
+
+.header-menu li ul li:hover > a:after {
+    content: '';
+}
+
+.header-menu ul ul li:first-child > a:after {
+    position: absolute;
+    left: -6px;
+    top: 50%;
+    margin-top: -6px;
+    border-left: 0;
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent;
+    border-right: 6px solid #fff;
+}
