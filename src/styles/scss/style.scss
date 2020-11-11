@@ -1,3 +1,7 @@
+@import "~bootstrap-scss/functions";
+@import "~bootstrap-scss/variables";
+@import "~bootstrap-scss/mixins";
+@import "variables";
 
 @font-face {
   font-family: "Montserrat";
@@ -54,36 +58,86 @@
     font-weight: 600;
 }
 
+//@font-face {
+//    font-family: 'Cinzel';
+//    src: local('Cinzel Regular'), local('Cinzel-Regular'),
+//    url('/fonts/Cinzel-Regular.woff2') format('woff2'),
+//    url('/fonts/Cinzel-Regular.woff') format('woff'),
+//    url('/fonts/Cinzel-Regular.ttf') format('truetype');
+//    font-weight: 400;
+//    font-style: normal;
+//}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: local('Cinzel'), local('Cinzel-Regular'), url('/fonts/constantine-lq0q-webfont.woff2') format('woff2'), url('/fonts/constantine-lq0q-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+//@font-face {
+//    font-family: 'constantineregular';
+//    src: url('constantine-lq0q-webfont.woff2') format('woff2'),
+//    url('constantine-lq0q-webfont.woff') format('woff');
+//    font-weight: normal;
+//    font-style: normal;
+//
+//}
+
+//@font-face {
+//    font-family: 'Cinzel';
+//    src: local('Cinzel Bold'), local('Cinzel-Bold'), url('/fonts/cinzelbold.woff2') format('woff2'), url('/fonts/cinzelbold.woff') format('woff'), url('/fonts/cinzelbold.ttf') format('truetype');
+//    font-weight: 700;
+//    font-style: normal;
+//    font-display: swap;
+//}
+//@font-face {
+//    font-family: 'Cinzel';
+//    src: local('Cinzel Black'), local('Cinzel-Black'), url('/fonts/cinzelblack.woff2') format('woff2'), url('/fonts/cinzelblack.woff') format('woff'), url('/fonts/cinzelblack.ttf') format('truetype');
+//    font-weight: 900;
+//    font-style: normal;
+//    font-display: swap;
+//}
+
+@font-face {
+    font-family: 'Acrom';
+    src: local('Acrom Regular'), local('Acrom-Regular'),
+    url('/fonts/Acrom-Regular.woff2') format('woff2'),
+    url('/fonts/Acrom-Regular.woff') format('woff'),
+    url('/fonts/Acrom-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
 
 
-@import "variables";
+body {
+    font-family: Acrom;
+}
+
+a {
+    text-decoration: none;
+    color: $base-color;
+
+    &:hover {
+        color: $base-color-darken-10;
+        text-decoration: none;
+    }
+}
+
+@import "btn";
 @import "header";
-@import "button";
-@import "body";
-@import "slider";
+@import "h";
+@import "top-menu";
+@import "main-slider";
+@import "product-item";
+@import "owl";
+@import "catalog-item";
+@import "need-help";
+@import "review";
+@import "cta-form";
 @import "footer";
-@import "tovar";
-@import "catalog";
-@import "h1";
-@import "h2";
-@import "breadcrumb";
-@import "form";
-@import "contacts";
-@import "header-menu";
-@import "about-section";
-@import "fotorama";
-@import "product";
-@import "star-list";
-@import "partner";
-@import "action";
-@import "delivery";
-@import "pagination";
-@import "spasibo";
-@import "gallery";
-@import "category";
-@import "404";
-@import "plazma";
-@import "favourites";
+@import "dekor";
+
 
 
 

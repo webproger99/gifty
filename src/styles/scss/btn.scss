@@ -1,0 +1,39 @@
+.btn {
+  border-radius: 0;
+  font-size: .9em;
+  padding: 1em 1em;
+
+  outline: none;
+
+  &-primary {
+    background-color: $primary-color;
+    border-color: darken($primary-color, 10%);
+
+    &:hover, &:focus {
+      box-shadow: none;
+      background: $primary-color-darken-10;
+      border-color: darken($primary-color-darken-10, 10%);
+    }
+    &:active {
+      box-shadow: none !important;
+      background: darken($primary-color-darken-10, 10%) !important;
+      border-color: darken($primary-color-darken-10, 20%) !important;
+    }
+  }
+
+  &-secondary {
+    background-color: $base-color;
+    border-color: darken($base-color, 10%);
+
+    &:hover, &:focus {
+      box-shadow: none;
+      background: $base-color-darken-10;
+      border-color: darken($base-color-darken-10, 10%);
+    }
+    &:active {
+      box-shadow: none !important;
+      background: darken($base-color-darken-10, 10%) !important;
+      border-color: darken($base-color-darken-10, 20%) !important;
+    }
+  }
+}

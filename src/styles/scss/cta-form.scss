@@ -1,0 +1,152 @@
+.cta-form {
+
+  $offset_y: 2em;
+  --cta-offset-x: 0;
+
+  @include media-breakpoint-up("md") {
+    --cta-offset-x: 2em;
+    margin-bottom: $offset_y + 2em;
+  }
+  @include media-breakpoint-up("lg") {
+    --cta-offset-x: 4em;
+  }
+
+
+
+  padding: 1em;
+  padding-top: $offset_y + 2em;
+  padding-bottom: 2em;
+  margin-right: var(--cta-offset-x);
+  background: $base-color;
+  position: relative;
+  min-height: 150px;
+  color: #fff;
+
+  &:before {
+    @include media-breakpoint-up("md") {
+      content: "";
+    }
+
+    pointer-events: none;
+    position: absolute;
+    left: var(--cta-offset-x);
+    right: calc(var(--cta-offset-x) * -1);
+    bottom: -$offset_y;
+    top: $offset_y;
+    border: 2px solid $base-color-light;
+  }
+
+  &__container {
+    @include media-breakpoint-down("sm") {
+      background: $base-color;
+      padding-bottom: 2em;
+    }
+  }
+
+  &__header {
+    font-size: 1.9em;
+    margin-bottom: 1em;
+    line-height: 1.2em;
+    font-family: $secondary-font;
+
+    @include media-breakpoint-up("lg") {
+      font-size: 2.2em;
+      margin-bottom: 0;
+    }
+    @include media-breakpoint-up("xl") {
+      font-size: 3em;
+      margin-bottom: 0;
+    }
+
+  }
+
+  &__text {
+    padding-top: .5em;
+    font-size: .9em;
+  }
+
+  &__checkbox {
+    cursor: pointer;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+
+    display: flex;
+
+    @include media-breakpoint-down("lg") {
+      font-size: .9em;
+    }
+    //@include media-breakpoint-down("lg") {
+    //  font-size: 1.2em;
+    //}
+
+    //font-size: .9em;
+
+    & > * {
+      display: inline-block;
+    }
+
+    [type="checkbox"] {
+      display: none;
+    }
+    [type="checkbox"]:checked + &-custom {
+
+      &:after {
+        content: "";
+      }
+    }
+
+    &-custom {
+      display: block;
+      width: 2em;
+      height: 2em;
+      background: #fff;
+      position: relative;
+      margin-right: 1em;
+      flex: none;
+
+      @include media-breakpoint-up("sm") {
+      }
+
+      &:after {
+        content: none;
+        position: absolute;
+        background: green;
+        left: -.3em;
+        right: 0;
+        bottom: -.3em;
+        top: -.7em;
+        background: url("/img/check.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+      }
+    }
+  }
+
+  &__input {
+    &-text {
+      display: block;
+      background: rgba(227, 178, 218, 0.6);
+      border: 2px solid #fff;
+      width: 100%;
+      padding: 1em;
+      margin-bottom: 2em;
+      color: #fff;
+
+      &:focus {
+        outline-color: #fff;
+      }
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
+  }
+
+  &__wrapper {
+    @include media-breakpoint-down("md") {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

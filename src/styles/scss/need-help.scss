@@ -1,0 +1,119 @@
+.need-help {
+  //position: relative;
+  background: url("/img/helpbg.svg");
+  background-size: cover;
+  height: 60vw;
+  margin-top: -25vw;
+  background-repeat: no-repeat;
+
+  @include media-breakpoint-only("sm") {
+    margin-top: -15vw;
+  }
+
+  @include media-breakpoint-down("md") {
+    background-size: contain;
+    height: 90vw;
+  }
+
+  @include media-breakpoint-only("md") {
+    height: 70vw;
+  }
+
+  &__button {
+    position: relative;
+    transform: translateY(-50%) translateX(-50%);
+
+    left: 50vw;
+    top: 40vw;
+    font-size: 4vw;
+
+    @include media-breakpoint-only("md") {
+      left: 61vw;
+      top: 37.5vw;
+      font-size: 2vw;
+    }
+
+    @include media-breakpoint-up("lg") {
+      left: 60.5vw;
+      top: 37.5vw;
+      font-size: 1.2vw;
+    }
+
+
+
+
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: "";
+      background: green;
+      background: url("/img/help-button.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      left: 4em;
+      width: 7em;
+      top: -3.5em;
+      height: 4em;
+
+      @include media-breakpoint-up("md") {
+        left: -2em;
+        width: 10em;
+        height: 6em;
+        top: -5.5em;
+      }
+    }
+  }
+
+  &__caption-1 {
+    position: absolute;
+    font-family: $secondary-font;
+    color: $base-color;
+    left: 32vw;
+    top: 8vw;
+    font-size: 4vw;
+
+    @include media-breakpoint-only("md")
+    {
+      left: 15vw;
+      top: 19vw;
+      font-size: 3vw;
+    }
+
+    @include media-breakpoint-up("lg") {
+      left: 25vw;
+      top: 23vw;
+      font-size: 2vw;
+    }
+  }
+  &__caption-2 {
+    position: absolute;
+    left: 25vw;
+    top: 40vw;
+    font-family: $secondary-font;
+    color: $base-color;
+    font-size: 3vw;
+    text-transform: uppercase;
+
+    @include media-breakpoint-down("md") {
+      top: 57vw;
+      font-size: 5vw;
+      text-align: center;
+      left: 10vw;
+      right: 10vw;
+      background: rgba(255,255,255,.5);
+    }
+
+
+    @include media-breakpoint-only("md") {
+      top: 45vw;
+      left: 15vw;
+      text-align: left;
+    }
+  }
+
+  &__text-wrapper {
+    position: relative;
+  }
+}

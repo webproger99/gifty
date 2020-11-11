@@ -1,0 +1,40 @@
+.review {
+  height: 100%;
+  text-align: center;
+  background: $base-color;
+  color: #fff;
+  margin-bottom: 2em;
+
+
+  &_hidden {
+    display: none;
+  }
+
+  &_text-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+  }
+
+  &_color {
+    &-base {
+      background: $base-color;
+      color: #fff;
+    }
+    &-base-light {
+      background: $base-color-light;
+      color: #fff;
+    }
+    &-primary {
+      background: $primary-color;
+      color: $base-color;
+    }
+  }
+
+  &__carousel.owl {
+    .owl-nav {
+      top: 40% !important;
+    }
+  }
+}

@@ -1,0 +1,297 @@
+.dekor {
+  @mixin size($size) {
+    height: $size;
+    width: $size;
+  }
+
+
+  &__wrapper {
+    position: relative;
+  }
+
+
+  &__star {
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat !important;
+    background-image: url("/img/dekor/purple.svg");
+
+    &_purple {
+      background-image: url("/img/dekor/purple.svg");
+    }
+
+    &_cyan {
+      background-image: url("/img/dekor/cyan.svg");
+    }
+  }
+
+  &__dot {
+    width: 1vw;
+    height: 1vw;
+    background-color: $base-color-light;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+
+    &_purple {
+      background-color: $base-color;
+    }
+
+    &_cyan {
+      background-color: $primary-color;
+    }
+  }
+
+
+  &__products {
+    &-0 {
+      top: 3vw;
+      left: 22vw;
+      @include size(2vw);
+    }
+
+    &-1 {
+      right: 5vw;
+    }
+
+    &-2 {
+      right: 0vw;
+      top: 5vw;
+      @include size(5vw);
+
+      @media (min-width: 1350px) {
+        right: -3vw;
+      }
+      @media (min-width: 1400px) {
+        right: -8vw;
+      }
+
+      @include media-breakpoint-down("lg") {
+        right: 2vw;
+        @include size(10vw);
+      }
+    }
+
+    &-3 {
+      left: -5vw;
+      bottom: -2vw;
+
+      @include size(3vw);
+
+      @include media-breakpoint-down("md") {
+        left: 7vw;
+        @include size(8vw);
+      }
+    }
+
+    &-4 {
+      left: -5vw;
+      bottom: -2vw;
+
+      @include size(3vw);
+      @include media-breakpoint-down("md") {
+        display: none;
+      }
+    }
+
+    &-5 {
+      left: 3vw;
+      bottom: -1vw;
+      @include media-breakpoint-down("md") {
+        display: none;
+      }
+    }
+
+    &-6 {
+      left: 2vw;
+      bottom: -1.3vw;
+
+      @include size(.5vw);
+      @include media-breakpoint-down("md") {
+        display: none;
+      }
+    }
+
+    &-7 {
+      right: 15vw;
+      top: 0;
+
+      @include size(.7vw);
+      @include media-breakpoint-down("md") {
+        display: none;
+      }
+    }
+
+    &-8 {
+      right: 20vw;
+      top: 3vw;
+
+      @include size(.7vw);
+      @include media-breakpoint-down("md") {
+        display: none;
+      }
+    }
+
+    &-9 {
+      right: 0vw;
+
+      @media (min-width: 1350px) {
+        right: -1vw;
+      }
+      top: 3vw;
+
+      @include size(.7vw);
+      @include media-breakpoint-down("md") {
+        display: none;
+      }
+    }
+
+    &-10 {
+      right: 26vw;
+      top: 2vw;
+
+      @include size(.8vw);
+      @include media-breakpoint-down("md") {
+        display: none;
+      }
+    }
+
+    &-11 {
+      right: .5vw;
+
+      @media (min-width: 1350px) {
+        right: -1.5vw;
+      }
+      top: 2vw;
+
+      @include size(1vw);
+      @include media-breakpoint-down("md") {
+        display: none;
+      }
+    }
+
+    &-12 {
+      right: .5vw;
+
+      @media (min-width: 1350px) {
+        right: -1vw;
+      }
+      bottom: 2vw;
+
+      @include size(.8vw);
+
+      @include media-breakpoint-down("md") {
+        display: none;
+      }
+    }
+  }
+
+  &__catalog-main {
+    &-0 {
+      top: 45%;
+      left: 2vw;
+      @include media-breakpoint-up("md") {
+        left: -5vw;
+      }
+      @include size(5vw);
+    }
+
+    &-1 {
+      top: 40%;
+      left: 25vw;
+    }
+
+    &-2 {
+      right: 25vw;
+      top: 3%;
+      @include size(4vw);
+    }
+
+    &-3 {
+      @include media-breakpoint-up("md") {
+        right: 0vw;
+      }
+
+
+      @media (min-width: 1350px) {
+        right: -5vw;
+      }
+
+      top: 25%;
+      @include size(3vw);
+    }
+
+    &-4 {
+      left: 45vw;
+      top: 50%;
+
+      @include size(1vw);
+    }
+
+    &-5 {
+      left: 47vw;
+      top: 54%;
+
+      @include size(1vw);
+    }
+  }
+
+  &__cta {
+    &-1 {
+      @include media-breakpoint-down("sm") {
+        @include size(10vw);
+        top: 10px;
+      }
+    }
+
+    &-2 {
+      bottom: 10%;
+      left: 15vw;
+
+      @include media-breakpoint-down("sm") {
+        @include size(7vw)
+      }
+    }
+
+    &-3 {
+      bottom: 10%;
+      left: 20vw;
+
+      @include media-breakpoint-down("sm") {
+        @include size(2vw);
+        left: 12vw;
+        bottom: 3%;
+      }
+    }
+
+    &-4 {
+      bottom: 13%;
+      left: 21vw;
+      @include size(1.5vw);
+
+      @include media-breakpoint-down("sm") {
+
+        left: 10vw;
+        bottom: 2%;
+      }
+    }
+
+    &-5 {
+      right: 2vw;
+      bottom: 15%;
+      @include size(1.5vw);
+    }
+
+    &-6 {
+      right: 4.5vw;
+      bottom: 18%;
+    }
+
+    &-7 {
+      right: 12vw;
+      bottom: 10%;
+    }
+  }
+}

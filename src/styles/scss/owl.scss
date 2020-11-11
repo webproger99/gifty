@@ -1,0 +1,73 @@
+.owl {
+  $triangle_size: 20px;
+
+
+  @include media-breakpoint-down("sm") {
+    $triangle_size: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include media-breakpoint-between("md", "lg") {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .owl-dots {
+    margin-top: 25px;
+
+    .owl-dot {
+      outline: none;
+      span {
+        background: $base-color-light;
+      }
+
+      &.active span {
+        background: $base-color;
+      }
+    }
+  }
+
+  .owl-nav {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 25%;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+
+    @include media-breakpoint-up("md") {
+      left: -15px;
+      right: -15px;
+    }
+
+    @include media-breakpoint-up("xl") {
+      left: -35px;
+      right: -35px;
+      top: 30%;
+    }
+  }
+
+
+  .owl-prev, .owl-next {
+    outline: none !important;
+    background: none !important;
+  }
+
+  .owl-prev {
+    width: 0;
+    height: 0;
+    border-style: solid !important;
+    border-width: $triangle_size $triangle_size $triangle_size 0 !important;
+    border-color: transparent $base-color transparent transparent !important;
+  }
+
+  .owl-next {
+    width: 0;
+    height: 0;
+    border-style: solid !important;
+    border-width: $triangle_size 0 $triangle_size $triangle_size !important;
+    border-color: transparent transparent transparent $base-color !important;
+  }
+}
