@@ -1,0 +1,27 @@
+.profile {
+
+  &__inline {
+    margin-bottom: 15px;
+
+    &-login {
+      font-weight: bold;
+      font-size: 1.1em;
+      position: relative;
+      //top: -.4em;
+
+      &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        right: 0;
+        left: 0;
+        height: 3px;
+        background: $base-color-light;
+      }
+    }
+
+    &-avatar {
+      border-radius: 50%;
+    }
+  }
+}

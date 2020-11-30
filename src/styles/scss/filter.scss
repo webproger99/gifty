@@ -1,0 +1,19 @@
+.filter {
+
+  select.form-control {
+    background: $base-color-ultralight;
+  }
+
+  &__wrapper {
+    @media (min-width: 450px) {
+      display: flex;
+      justify-content: space-around;
+    }
+
+
+    .dropdown-toggle {
+      color: $base-color !important;
+    }
+  }
+
+}

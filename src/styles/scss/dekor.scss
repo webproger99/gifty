@@ -69,8 +69,8 @@
       }
 
       @include media-breakpoint-down("lg") {
-        right: 2vw;
-        @include size(10vw);
+        right: 0;
+        @include size(5vw);
       }
     }
 
@@ -292,6 +292,34 @@
     &-7 {
       right: 12vw;
       bottom: 10%;
+    }
+  }
+
+  &__founders {
+    &-1 {
+      left: 10vw;
+      @include media-breakpoint-down("sm") {
+        left: 2vw;
+        top: -10%;
+      }
+    }
+
+    &-2 {
+      left: 15vw;
+      top: 25%;
+      @include size(2em);
+      @include media-breakpoint-down("sm") {
+        display: none;
+      }
+    }
+
+    &-3 {
+      bottom: 10%;
+      right: 10vw;
+      @include media-breakpoint-down("sm") {
+        @include size(1.5em);
+        bottom: 13%;
+      }
     }
   }
 }

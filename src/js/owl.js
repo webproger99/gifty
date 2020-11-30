@@ -40,6 +40,48 @@ $(".product-item__carousel").owlCarousel({
     },
   },
 });
+
+$(".constructor__carousel").owlCarousel({
+  loop: true,
+  nav: true,
+  navText: ["", ""],
+
+  //    center:true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    768: {
+      items: 2,
+      margin: 10,
+    },
+    1000: {
+      items: 3,
+      margin: 25,
+    },
+  },
+});
+
+$(".news__carousel").owlCarousel({
+  loop: true,
+  nav: true,
+  navText: ["", ""],
+
+  //    center:true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    768: {
+      items: 2,
+      margin: 10,
+    },
+    1000: {
+      items: 3,
+      margin: 25,
+    },
+  },
+});
 //
 // $(".tovar__gallery").owlCarousel({
 //   loop: true,

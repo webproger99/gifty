@@ -1,0 +1,36 @@
+.alternate-form {
+
+  &__control {
+    color: $base-color;
+
+  }
+
+  &__group {
+    & > input,
+    & > select,
+    & > textarea {
+      display: block;
+      width: 100%;
+    }
+
+    & > *:not(label) {
+      margin-bottom: 2em;
+    }
+  }
+}
+
+textarea,
+select,
+input[type="email"],
+input[type="tel"],
+input[type="text"] {
+  &.alternate-form__control {
+    border: 1px solid $base-color-light;
+    background: $base-color-ultralight;
+    padding: 1em;
+
+    &:focus, &:active {
+      outline: 1px solid $base-color;
+    }
+  }
+}

@@ -112,6 +112,8 @@
 
 body {
     font-family: Acrom;
+
+    color: $base-color;
 }
 
 a {
@@ -137,6 +139,24 @@ a {
 @import "cta-form";
 @import "footer";
 @import "dekor";
+@import "dropdown";
+@import "filter";
+@import "fotorama";
+@import "product";
+@import "breadcrumb";
+@import "constructor";
+@import "alternate-form";
+@import "cart";
+@import "profile";
+@import "favorite";
+@import "auth";
+@import "bg";
+@import "delivery";
+@import "corporate";
+@import "slider-pro";
+@import "news";
+@import "founders";
+@import "lk";
 
 
 

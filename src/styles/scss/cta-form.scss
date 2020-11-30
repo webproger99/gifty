@@ -36,11 +36,21 @@
     border: 2px solid $base-color-light;
   }
 
+
   &__container {
     @include media-breakpoint-down("sm") {
       background: $base-color;
       padding-bottom: 2em;
+
+      &.cta-form_light {
+        @include media-breakpoint-down("sm") {
+          background: $base-color-ultralight;
+          padding-bottom: 2em;
+        }
+      }
     }
+
+
   }
 
   &__header {
@@ -58,6 +68,10 @@
       margin-bottom: 0;
     }
 
+  }
+
+  &__big {
+    font-size: 1.2em;
   }
 
   &__text {
@@ -96,6 +110,9 @@
     }
 
     &-custom {
+
+
+
       display: block;
       width: 2em;
       height: 2em;
@@ -119,6 +136,13 @@
         background-size: contain;
         background-repeat: no-repeat;
 
+      }
+
+      &_light {
+        background: $base-color-light;
+        &:after {
+          background: url("/img/check-light.svg");
+        }
       }
     }
   }
@@ -149,4 +173,29 @@
       padding-right: 0;
     }
   }
+}
+
+.cta-form_light .cta-form {
+  background: $base-color-ultralight;
+  color: $base-color;
+
+  .dekor__cta-4 {
+    background: $base-color-light;
+    left: 5vw;
+  }
+  .dekor__cta-6 {
+    background: $base-color;
+  }
+  .dekor__cta-7 {
+    right: 3%;
+    top: 15%;
+  }
+  .dekor__cta-2 {
+    display: none;
+  }
+  .dekor__cta-3 {
+    bottom: 10px;
+  }
+
+
 }

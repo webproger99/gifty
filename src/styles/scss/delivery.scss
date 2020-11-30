@@ -1,0 +1,63 @@
+.delivery {
+  &__subtitle {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 25px auto;
+
+    @include media-breakpoint-up("md") {
+      margin: 40px auto;
+    }
+  }
+
+  &__trigger {
+    &-title {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin: 15px 0;
+    }
+
+    &-image {
+      max-height: 50px;
+      margin-left: .5em;
+    }
+
+    &-text {
+      margin: 15px 0;
+    }
+
+    &-wrapper {
+      max-width: 1450px;
+    }
+  }
+
+  &__img {
+    &-1 { height: 50px;}
+    &-2 { height: 50px;}
+    &-3 { height: 50px;}
+    &-4 { height: 50px;}
+  }
+
+  &__pay {
+    &-header {
+      font-size: 2em;
+
+      @include media-breakpoint-up("md") {
+        font-size: 2.4em;
+      }
+
+    }
+
+    &-secondary {
+      font-size: .8em;
+    }
+
+    &-title {
+      font-weight: bold;
+    }
+    &-text {
+      margin-bottom: 10px;
+      font-size: .9em;
+    }
+  }
+
+}

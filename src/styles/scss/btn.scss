@@ -1,9 +1,17 @@
 .btn {
   border-radius: 0;
   font-size: .9em;
-  padding: 1em 1em;
+  padding: 1em .7em;
+
+  @include media-breakpoint-up("lg") {
+    padding: 1em 1em;
+  }
 
   outline: none;
+
+  &-sm {
+    padding: .5em 1em;
+  }
 
   &-primary {
     background-color: $primary-color;
@@ -34,6 +42,40 @@
       box-shadow: none !important;
       background: darken($base-color-darken-10, 10%) !important;
       border-color: darken($base-color-darken-10, 20%) !important;
+    }
+  }
+
+
+
+  &-white {
+    color: #fff !important;
+    border-color: darken(#fff, 10%) !important;
+
+    &:hover, &:focus {
+      box-shadow: none;
+      color: darken(#fff, 10%) !important;
+      border-color: darken(#fff, 20%) !important;
+    }
+    &:active {
+      box-shadow: none !important;
+      color: darken(#fff, 20%) !important;
+      border-color: darken(#fff, 30%) !important;
+    }
+  }
+
+  &-light {
+    background-color: $base-color-light !important;
+    border-color: darken($base-color-light, 10%) !important;
+
+    &:hover, &:focus {
+      box-shadow: none;
+      background: darken($base-color-light, 10%) !important;
+      border-color: darken($base-color-light, 20%) !important;
+    }
+    &:active {
+      box-shadow: none !important;
+      background: darken($base-color-light, 20%) !important;
+      border-color: darken($base-color-light, 30%) !important;
     }
   }
 }

@@ -1,0 +1,16 @@
+.dropdown {
+  &-menu {
+    background-color: $base-color-ultralight;
+  }
+
+  &-menu &-item {
+    transition: .3s;
+
+    &:hover {
+      background: linear-gradient(90deg, $base-color-light 0%, rgba(255, 255, 255, 0) 100%) !important;
+    }
+    &:active, &:focus {
+      background: $base-color-light !important;
+    }
+  }
+}

@@ -1,0 +1,170 @@
+.constructor {
+  &__item {
+
+    &-body {
+    }
+
+    &-title {
+      text-align: center;
+      margin-bottom: 14px;
+      margin-top: 14px;
+
+      @include media-breakpoint-up("lg") {
+        font-size: 24px;
+      }
+    }
+
+    &-price {
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 14px;
+      margin-top: 14px;
+      @include media-breakpoint-up("lg") {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &__wrapper {
+    margin-bottom: 1em;
+  }
+
+  &__title {
+    position: relative;
+    font-size: 30px;
+    color: $base-color;
+    margin-bottom: 1em;
+    margin-top: 1em;
+
+    @include media-breakpoint-down("sm") {
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 17px;
+
+      margin-bottom: 2em;
+      margin-top: 2em;
+    }
+
+    @include media-breakpoint-only("md") {
+      font-size: 20px;
+    }
+
+
+    &-number {
+      position: relative;
+      display: inline-block;
+      background: $base-color-light;
+      border-radius: 50%;
+      width: 1.5em;
+      height: 1.5em;
+      text-align: center;
+    }
+  }
+
+  &__bg-digit {
+
+    @include media-breakpoint-down("sm") {
+      display: none;
+    }
+
+    position: absolute;
+    left: -100px;
+    top: 0;
+    font-size: 120px;
+    font-family: $secondary-font;
+    color: $base-color-ultralight;
+    width: 100px;
+    text-align: center;
+    line-height: 1em;
+  }
+
+  &__btn-more {
+    margin: 1em auto;
+    //display: block;
+  }
+
+  &__panel {
+    //position: sticky;
+    //top: 15px;
+    //bottom: 15px;
+    border: 1px solid $base-color-light;
+    background: $base-color-ultralight;
+    color: $base-color;
+
+    @include media-breakpoint-up("md") {
+      //max-height: 93vh;
+      //overflow-y: auto;
+    }
+
+    &-header {
+      padding-top: .5em;
+      padding-bottom: .5em;
+      padding-left: .5em;
+      background: linear-gradient(90deg, $base-color-light 11.6%, rgba(227, 178, 218, 0) 90%);
+      font-family: $primary-font !important;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &-body {
+      padding: 0 15px;
+    }
+
+    &-measure {
+
+      font-size: 10px;
+    }
+
+    &-count {
+
+      font-size: 24px;
+    }
+    &-price {
+
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    &-caption {
+      font-size: 18px;
+    }
+
+
+
+    &-btn-remove {
+
+    }
+
+    &-progress {
+      font-weight: bold;
+    }
+
+    &-item:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &-actions {
+      text-align: center;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    &-btn-place {
+      @include media-breakpoint-up("lg") {
+        font-size: 1.1em;
+      }
+    }
+  }
+
+  &__carousel {
+    @include media-breakpoint-up("md") {
+      padding-left: 10px;
+      padding-right: 10px;
+      &.owl .owl-nav {
+        top: 35% !important;
+        left: -15px;
+        right: -15px;
+      }
+    }
+  }
+}

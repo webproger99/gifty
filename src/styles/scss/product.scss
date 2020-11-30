@@ -1,0 +1,80 @@
+.product {
+  $x_back_offset: 15px;
+  &__wrapper {
+    margin-top: 30px;
+    background-size: cover;
+    padding-bottom: 30px;
+    background: linear-gradient(0deg, #F1D7EC 0%, #fff 50%);
+
+    @include media-breakpoint-up("md") {
+      background: url("/img/product-bg.svg") no-repeat left bottom;
+      padding-bottom: 5em;
+    }
+  }
+  &__header {
+    font-size: 2em;
+    padding-left: $x_back_offset;
+    margin-left: -$x_back_offset;
+    background: linear-gradient(90deg, $base-color-light 11.6%, rgba(227, 178, 218, 0) 100%);
+  }
+
+  &__price {
+    color: $base-color;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  &__description {
+    color: $base-color;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  &__add-to-cart {
+    @include media-breakpoint-up("md"){
+      font-size: .9em;
+    }
+    @include media-breakpoint-up("lg"){
+      font-size: 1.1em;
+    }
+    @include media-breakpoint-up("xl"){
+      font-size: 1.2em;
+    }
+  }
+
+  &__add-to-favorite {
+    position: relative;
+    padding-left: 2em;
+    align-self: center;
+
+    @include media-breakpoint-up("md"){
+      font-size: .9em;
+    }
+    @include media-breakpoint-up("lg"){
+      font-size: 1.1em;
+    }
+    @include media-breakpoint-up("xl"){
+      font-size: 1.2em;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      display: block;
+      width: 1.7em;
+      height: 1.7em;
+      background-image: url("/img/heart_outline.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &:hover {
+      &:before {
+        background-image: url("/img/heart.svg");
+      }
+    }
+  }
+}

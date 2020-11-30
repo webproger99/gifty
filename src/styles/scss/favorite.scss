@@ -1,0 +1,26 @@
+.favorite {
+  &__link {
+    position: relative;
+    padding-right: 1.9em;
+
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: block;
+      width: 1.8em;
+      height: 1.8em;
+      background-image: url("/img/heart_outline.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &:hover {
+      &:after {
+        background-image: url("/img/heart.svg");
+      }
+    }
+  }
+}

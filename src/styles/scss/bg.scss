@@ -1,0 +1,19 @@
+.bg {
+  &__base {
+    background-color: $base-color;
+  }
+  &__primary {
+    background-color: $primary-color;
+  }
+  &__light {
+    background-color: $base-color-light;
+  }
+  &__ultralight {
+    background-color: $base-color-ultralight;
+  }
+
+  &__from-light-to-ultralight {
+    background: linear-gradient(269.94deg, #FFFFFF 6.13%, rgba(255, 255, 255, 0) 70.11%), rgba(227, 178, 218, 0.5);
+  }
+
+}

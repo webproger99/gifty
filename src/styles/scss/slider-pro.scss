@@ -1,0 +1,21 @@
+.slider-pro {
+  .sp-right-thumbnails.sp-has-pointer .sp-selected-thumbnail {
+    &:before {
+      border-left-color: $base-color !important;
+    }
+
+    &:after {
+      border-right-color: $base-color !important;
+    }
+  }
+
+  .sp-bottom-thumbnails.sp-has-pointer .sp-selected-thumbnail {
+    &:before {
+      border-bottom-color: $base-color !important;
+    }
+    &:after{
+      border-bottom-color: $base-color !important;
+    }
+  }
+
+}
